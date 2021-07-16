@@ -1,1 +1,1 @@
-### Segmentation in Style: Unsupervised Image Segmentation with Stylegan
+# Segmentation in Style: Unsupervised Image Segmentation with Stylegan
