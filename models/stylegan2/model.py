@@ -478,6 +478,7 @@ class Generator(nn.Module):
         input_is_latent=False,
         noise=None,
         randomize_noise=True,
+        feature_layer_number_to_return=None
     ):
         if not input_is_latent:
             styles = [self.style(s) for s in styles]
@@ -521,6 +522,8 @@ class Generator(nn.Module):
         out = self.input(latent)
         out = self.conv1(out, latent[:, 0], noise=noise[0])
 
+        out_to_save = None
+
         skip = self.to_rgb1(out, latent[:, 1])
 
         i = 1
@@ -529,11 +532,18 @@ class Generator(nn.Module):
         ):
             out = conv1(out, latent[:, i], noise=noise1)
             out = conv2(out, latent[:, i + 1], noise=noise2)
+
+            if i == feature_layer_number_to_return:
+              out_to_save = out
+
             skip = to_rgb(out, latent[:, i + 2], skip)
 
             i += 2
 
         image = skip
+
+        if feature_layer_number_to_return:
+            return image, None, out_to_save
 
         if return_latents:
             return image, latent
