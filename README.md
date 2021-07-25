@@ -1,4 +1,5 @@
 ## Segmentation in Style: Unsupervised Semantic Image Segmentation with Stylegan and CLIP
 
-![wacv_results_main](https://user-images.githubusercontent.com/2501383/126889326-5a9e5d6f-3915-4f87-bc7c-f36bdeaecba6.jpg)
+[wacv_results_main.pdf](https://github.com/warmspringwinds/segmentation_in_style/files/6873447/wacv_results_main.pdf)
+
 
