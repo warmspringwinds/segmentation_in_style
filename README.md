@@ -4,5 +4,7 @@ Abstract: *We introduce a method that allows to automatically segment images int
 
 ![wacv_results_main](https://user-images.githubusercontent.com/2501383/126889388-21b9c55e-7732-47ec-a63a-bc41e9998c68.jpg)
 
+![wacv_ main_figure](https://user-images.githubusercontent.com/2501383/126889494-19a1434c-1a9d-4928-bd4b-b231d4bd2be8.jpg)
+
 
 
