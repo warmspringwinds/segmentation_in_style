@@ -7,4 +7,8 @@ Abstract: *We introduce a method that allows to automatically segment images int
 
 
 
+This repository contains the official TensorFlow implementation of the following paper:
 
+> **Segmentation in Style: Unsupervised Semantic Image Segmentation with Stylegan and CLIP**<br>
+> Daniil Pakhomov, Sanchit Hira, Narayani Wagle, Kemar E. Green, Nassir Navab<br>
+> https://arxiv.org/abs/2107.12518
